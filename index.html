@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <title>ゴルフスタジオ</title>
+    <meta name="description" content="GOLF">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+<!--header-->  
+<body>
+  <section id="logo">
+    <h1 class="logo">
+      <img src="images/GOLF STUDIO.png">      
+    </h1>
+  </section>
+    <div class="drawer">        
+      <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+      <label for="navToggle" class="btn-burger">
+        <span class="icon"></span>            
+      </label>        
+       
+      <nav class="nav">                    
+       <ul class="nav-list">                         
+        <li><a href="./index.html#index">ゴルフスタジオの特徴</a></li>    
+        <li><a href="./index.html#golf_coach">コーチのご紹介</a></li>            
+        <li><a href="./index.html#golf_fee">料金</a></li>                
+        <li><a href="./index.html#cmn-titlee">アクセス</a></li>                
+        <li><a href="./index.html#inqury">お問い合わせ</a></li>                
+       </ul>            
+      </nav>        
+    </div>    
+  
+<!--ゴルフ画像-->
+<div class="golf_images">
+ <h2><img src="images/lesson.png" alt="lesson"></h2> 
+</div>
+
+<!--ゴルフスタジオの特徴  -->
+<section id="index">
+  <div class="inner">
+    <h2 class="cmn-title">
+      <span>ゴルフスタジオの特徴</span></h2>
+    <ol class="index-list">
+      <li>①天候に左右されないインドアゴルフ!<br>インドア環境こその快適な空間で、いつでもゴルフを楽しめます。<br>
+        初めての方でも、クラブ、シューズ、グローブの無料貸出のご用意がありますので、手ぶらで気軽にゴルフを楽しむ事ができます。</li>
+      <li>②全打席にオートティーアップを導入<br>スムーズで効率的な練習環境をご提供します。</li>
+      <li>③経験豊富なコーチ陣による指導<br>経験豊富なプロが改善点や正しい技術を懇切丁寧に指導致します。</li>
+    </ol>
+  </div>
+</section>
+
+<!--写真3-->
+<section id="photograph" class="wrapper">
+  <ul>
+    <li>
+      <img src="images/GOLF①.png" alt="テキストテキストテキスト">
+    </li>
+    <li>
+      <img src="images/GOLF②.png" alt="テキストテキストテキスト">
+    </li>
+    <li>
+      <img src="images/GOLF③.png" alt="テキストテキストテキスト">
+    </li>
+  </ul>
+</section>
+
+<!-- コーチのご紹介 -->
+<section class="golf_coach" id="golf_coach">
+  <h2 class="cmn-title ">
+   <span>コーチのご紹介</span></h2>
+ </section>  
+ 
+ <div class="coach_title">
+  <section class="coach_section">
+   <div class="coach_img">
+    <img src="images/tanakacoach.png" alt="田中コーチ">
+   </div>
+   <div class="coach">
+    <h2 class="coach_name">田中コーチ</h2>
+     <p>ゴルフはいつからでも始める事が出来て、生涯楽しめるスポーツです。
+        上手くなるともっと楽しめるようになります。
+        楽しくスコアアップしていきましょう。</p>
+   </div>
+  </section>
+ 
+  <section class="coach_section">
+   <div class="coach_img">
+    <img src="images/suzukicoach.png" alt="鈴木パートナーコーチ">
+   </div>
+   <div class="coach">
+    <h2 class="coach_name">鈴木パートナーコーチ</h2>
+     <p>ゴルフは長く楽しむことができる生涯スポーツです。
+       ゴルフの楽しみ方は人それぞれの目標によって変わってくると思いますので、
+       コミュニケーションを大切に、その人に合ったアドバイスをさせて頂きたいと思っております。</p>
+   </div>
+  </section>
+
+
+<!-- 料金 -->
+<section id="golf_fee">
+  <h2 class="cmn-title">
+      <span>料金</span>
+  </h2>
+  <h2 class="cmn-title">
+      <span>入会金 11,000円(税込)</span>
+  </h2>
+  
+  <table class="tbl-r05">
+   <tr class="thead">
+      <th></th>
+      <th>時間</th>
+      <th>レッスン回数</th>
+      <th>料金</th>
+   </tr>
+  
+    <tr>
+      <td>平日夜間<br>18:00〜22:00</td>
+      <td data-label="時間">90分</td>
+      <td data-label="レッスン回数">月4回</td>
+      <td data-label="料金">11,000円</td>
+    </tr>
+    <tr>
+      <td>土日祝<br>09:00〜22:00</td>
+      <td data-label="時間">90分</td>
+      <td data-label="レッスン回数">月4回</td>
+      <td data-label="料金">13,000円</td>
+    </tr>
+    <tr>
+      <td>平日昼<br>12:00〜17:00</td>
+      <td data-label="時間">90分</td>
+      <td data-label="レッスン回数">月4回</td>
+      <td data-label="料金">9,000円</td>
+    </tr>
+  </table>
+  </section> 
+
+<!-- アクセス -->
+<section id="cmn-titlee">
+<h2 class="cmn-title">
+  <span>アクセス</span>
+</h2>
+</section>
+<div class="gmap-wrap">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.4466958110115!2d139.73464221478676!3d35.66600153841542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b835942e165%3A0xb4897f1f4264c771!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yS5LiB55uu77yU4oiS77yV!5e0!3m2!1sja!2sjp!4v1543466837094" width="750" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</section>
+
+<!-- お問い合わせ -->
+<section id="inqury">
+ <h2 class="cmn-title">
+  <span>お問い合わせ</span>
+ </h2>
+
+ <form action="#">
+  <dl class="form-area">
+   <dt><label for="name">氏名</label><span>必須</span></dt>
+   <dd>
+    <input type="text" id="name" name="your-name">
+    <p id="name-error" class="error-text"></p>
+   </dd>
+   <dt><label for="name">氏名(フリガナ)</label><span>必須</span></dt>
+   <dd>
+    <input type="text" id="name" name="your-name">
+    </dd>
+      <dt><label for="email">メールアドレス</label><span>必須</span></dt>
+      <dd>
+        <input type="text" id="name" name="your-name">
+      </dd>
+      <dt><label for="tel1">電話番号</label><span>必須</span></dt>
+      <dd>
+        <input type="text" id="tel1" name="your-tel1"> 
+        <input type="text" id="tel2" name="your-tel2"> 
+        <input type="text" id="tel3" name="your-tel3">
+      </dd>
+      <dt><label for="reservation">体験希望日</label><span>必須</span></dt>
+      <dd>
+        <input type="text" id="reservation" name="your-reservation">
+      </dd>
+      <dt>ご要望・ご質問</dt>
+      <dd>
+        <textarea class="message" name="message" required></textarea>
+      </dd>
+    </dl>
+ </form>
+
+    <div class="button-area">
+      <button id="submit-button" type="button" value="">送信</button>
+    </div>
+</section>
+ </div>
+</section>
+
+<!--footer-->
+<footer class="footer_area">
+  <small class="footer_area_copy">&copy; GOLF STUDIO</small>
+ </footer>
+ 
+</body>
+</html>

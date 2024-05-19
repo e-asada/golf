@@ -1,0 +1,470 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+
+/*h2共通*/
+.cmn-title {
+    text-align: center;
+    font-weight: bold;
+    margin:20px auto 30px;
+  }
+  @media screen and (max-width: 400px) {
+    .cmn-title {
+      font-size: 20px;
+  }
+}
+
+/*header*/
+.logo {
+  width: 180px;
+  margin: 0 auto;
+}
+
+/*ハンバーガーアイコン*/
+.btn-burger {
+  cursor: pointer;
+  display: block;
+  width: 56px;
+  height: 60px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+/*ハンバーガーアイコンを作る三本線*/
+.icon, .icon:before, .icon:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px; /*線の太さ*/
+  width: 35px; /*線の長さ*/
+  background-color: #444;
+  border-radius: 2px;
+  display: block;
+  content: '';
+  cursor: pointer;
+  margin: auto;
+}
+/*三本線の間隔*/
+.icon:before {
+top: 15px;
+}
+.icon:after {
+top: -25px;
+}
+/*チェックボックス非表示*/
+.nav-toggle {
+  display: none;
+}
+/*アイコンをクリックしたら*/
+.nav-toggle:checked ~ .btn-burger .icon {
+  background: transparent;
+}
+.nav-toggle:checked ~ .btn-burger .icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.nav-toggle:checked ~ .btn-burger .icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.icon,
+.icon:before,
+.icon:after {
+  transition: all .8s;
+}
+.nav {
+  background-color: #47bb60;
+}
+.nav-list a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-list {
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding-left: 20px;
+}
+.nav-list li {
+  margin: 0;
+  padding: 10px;
+}
+.nav-toggle:checked ~ .nav .nav-list {
+  display: block;
+}
+/* 幅768px以上のスタイル指定 */
+@media screen and (min-width: 768px) {
+/* ハンバーガーボタン */
+.btn-burger {
+  display: none;  /*768px以上では使用しない */
+}
+.logo {
+  width: auto;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+}
+.nav-toggle:checked ~ .nav .nav-list {
+  display: none;
+}
+.nav {
+  height: 75px;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  align-items: center;
+}
+.nav-list li:not(:last-child) {
+  border-right: 1px solid #fff;
+ }
+}
+/*ゴルフ画像*/
+.golf_images img{
+  width: 100%;
+  height: 100%;
+}
+
+/* ゴルフスタジオの特徴 */
+#index {
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+#index .index-list {
+  margin-left: 20px;
+}
+#index .index-list li {
+  margin-bottom: 20px;
+}
+#index .index-list li:last-child {
+  margin-bottom: 0;
+}
+.inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+}
+ /* 写真３ */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+#photograph ul {
+  display: flex;
+  justify-content: space-between;
+}
+#photograph li {
+  width: 32%;
+}
+
+/* コーチ紹介 */
+.golf_coach {
+  max-width: 800px;
+  margin: 30px auto 0;
+  padding: 0 16px;
+}
+.introduction {
+  text-align: center;
+  font-weight: bold;
+}
+ .coach_title {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.coach_name {
+  font-size: 25px;
+  color: #047e04;
+  margin-bottom: 25px;
+}
+.coach p{
+  color: rgb(77 95 77);
+}
+.coach_section {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  padding: 30px 10px;
+  margin: 0 auto;
+}
+.coach_section .coach_img {
+  width: 50%;
+}
+.coach_section .coach {
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .coach_name {
+    font-size: 1.25rem;
+  }
+  .coach_section {
+    flex-direction: column;
+  }
+  .coach_section .coach_img {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .coach_section .coach {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 387px) {
+  .coach_name {
+    font-size: 17px;
+    text-align: center;
+  }
+}  
+
+ /* 料金 */
+#golf_fee{
+  margin-bottom: 45px;
+}
+.tbl-r05  {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+  min-width: 605px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: green;
+  color: #fff;
+  margin: 10px auto;
+}
+.tbl-r05 .thead{
+  text-align: center;
+}
+.tbl-r05 th {
+  padding: 1em .8em;
+  border: 2px solid#fff;
+}
+.tbl-r05 td {
+  color: black;
+  padding: 1em;
+  background-color: rgb(167, 232, 167);
+  border: 2px solid#fff;
+}
+
+.tbl-r05 td:first-child {
+  background: green;
+  color: #fff;
+}
+
+@media screen and (max-width: 635px) {
+  .tbl-r05 {
+    margin: 10px;
+    min-width: 660px;
+  }
+  .tbl-r05 .thead {
+    display: none;
+  }
+  .tbl-r05 tr {
+    background-color: #fff;
+  }
+  .tbl-r05 td {
+    display: block;
+    text-align: right;
+    width: 85%;
+  }
+  .tbl-r05 td:first-child {
+    background: green;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  .tbl-r05 td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tbl-r05{
+    min-width: auto;
+    margin: 10px auto 10px 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tbl-r05{
+    min-width: auto;
+    margin: 10px auto 10px 65px;
+  }
+}
+
+ /* アクセス */
+ .gmap-wrap{
+  position : relative;
+  height : 0;
+  padding-bottom : 56.25%; /* 縦横比の指定 */
+  overflow : hidden;
+}
+
+.gmap-wrap iframe,
+.gmap-wrap object,
+.gmap-wrap embed{
+  position : absolute;
+  width : 90%;
+  height : 70%;
+  margin: 10px 5%;
+}
+
+ /* お問い合わせ */
+.form-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-area dt {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b802f;
+  color: #fff;
+  padding: 30px 15px;
+  margin-bottom: 2px;
+}
+.form-area dt span {
+  background-color: #fff;
+  color: #e85c4e;
+  font-size: 0.75rem;
+  padding: 0 8px;
+}
+.form-area dd {
+  width: 70%;
+  background-color: #fff;
+  padding: 22px 15px 20px 15px;
+  margin-bottom: 2px;
+}
+.message {
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+
+
+
+.form-area input {
+  background-color: #f2f2f2;
+  padding: 8px 10px;
+}
+.button-area {
+  text-align: center;
+  padding-top: 50px;
+}
+#submit-button {
+  background-color: #e85c4e;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#submit-button:hover {
+  opacity: 0.7;
+}
+#name {
+  width: 100%;
+}
+#tel1,
+#tel2,
+#tel3 {
+  max-width: 80px;
+}
+#reservation {
+  max-width: 200px;
+}
+/* エラーメッセージ用 */
+.error-text {
+  color: #de3f2e;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 670px) {
+  .form-area dt {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-area {
+    flex-direction: column;
+  }
+  .form-area dt {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .form-area dt span {
+    margin-left: 10px;
+  }
+  .form-area dd {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .form-area dd:last-child {
+    margin-bottom: 0;
+  }
+ }
+
+ @media screen and (max-width: 400px) {
+#submit-button {
+ font-size: 15px;
+}
+ }
+ @media screen and (max-width: 310px) {
+  #tel1, #tel2, #tel3 {
+    max-width: 65px;
+  }
+}
+
+/*footer*/
+.footer_area {
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  
+  }
+.footer_area_copy {
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+}
